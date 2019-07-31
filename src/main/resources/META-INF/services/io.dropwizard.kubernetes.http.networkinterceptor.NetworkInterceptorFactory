@@ -1,0 +1,2 @@
+io.dropwizard.kubernetes.http.networkinterceptor.LoggingNetworkInterceptorFactory
+io.dropwizard.kubernetes.http.networkinterceptor.UserAgentNetworkInterceptorFactory

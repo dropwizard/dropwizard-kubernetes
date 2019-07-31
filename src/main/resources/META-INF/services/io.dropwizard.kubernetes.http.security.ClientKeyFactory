@@ -1,0 +1,2 @@
+io.dropwizard.kubernetes.http.security.FileClientKeyFactory
+io.dropwizard.kubernetes.http.security.StringClientKeyFactory

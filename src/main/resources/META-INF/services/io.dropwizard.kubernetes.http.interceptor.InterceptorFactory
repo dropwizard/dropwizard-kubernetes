@@ -1,0 +1,4 @@
+io.dropwizard.kubernetes.http.interceptor.BackwardsCompatibilityInterceptorFactory
+io.dropwizard.kubernetes.http.interceptor.BasicAuthorizationInterceptorFactory
+io.dropwizard.kubernetes.http.interceptor.ImpersonationInterceptorFactory
+io.dropwizard.kubernetes.http.interceptor.OAuthAuthorizationInterceptorFactory

@@ -1,0 +1,9 @@
+watchReconnectInterval: 3s
+watchReconnectLimit: 25
+connectionTimeout: 10s
+requestTimeout: 4s
+rollingTimeout: 5s
+scaleTimeout: 6s
+webSocketTimeout: 3s
+webSocketPingInterval: 10s
+loggingInterval: 20s

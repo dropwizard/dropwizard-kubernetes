@@ -1,0 +1,2 @@
+io.dropwizard.kubernetes.http.security.FileCertAuthorityFactory
+io.dropwizard.kubernetes.http.security.StringCertAuthorityFactory

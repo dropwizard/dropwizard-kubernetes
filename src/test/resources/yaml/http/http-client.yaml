@@ -1,0 +1,19 @@
+followRedirects: false
+followSslRedirects: false
+proxy:
+  url: "https://127.0.0.1:6379"
+  username: admin
+  password: hunter2
+security:
+  trustCerts: true
+  caCert:
+    type: string
+    caCert: abc123def456
+  trustStore: src/test/resources/truststore.p12
+  trustStorePassword: changeit
+interceptors:
+  - type: backwards-compatibility
+  - type: oauth
+    oAuthToken:
+      type: string
+      token: 123abc456def

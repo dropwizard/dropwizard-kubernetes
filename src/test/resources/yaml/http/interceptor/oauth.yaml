@@ -1,0 +1,4 @@
+type: oauth
+oAuthToken:
+  type: string
+  token: abc123

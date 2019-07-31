@@ -1,0 +1,2 @@
+io.dropwizard.kubernetes.http.spec.ClearTextConnectionSpecFactory
+io.dropwizard.kubernetes.http.spec.TlsConnectionSpecFactory

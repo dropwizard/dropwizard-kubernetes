@@ -1,0 +1,7 @@
+io.dropwizard.kubernetes.http.interceptor.InterceptorFactory
+io.dropwizard.kubernetes.http.networkinterceptor.NetworkInterceptorFactory
+io.dropwizard.kubernetes.http.security.CertAuthorityFactory
+io.dropwizard.kubernetes.http.security.ClientCertFactory
+io.dropwizard.kubernetes.http.security.ClientKeyFactory
+io.dropwizard.kubernetes.http.security.OAuthTokenFactory
+io.dropwizard.kubernetes.http.spec.ConnectionSpecFactory

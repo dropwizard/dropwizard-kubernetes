@@ -1,0 +1,5 @@
+trustCerts: true
+caCert:
+  type: string
+  caCert: abc123
+tlsVersion: TLS_1_2

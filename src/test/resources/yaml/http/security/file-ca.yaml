@@ -1,0 +1,2 @@
+type: file
+caCertFile: src/test/resources/yaml/http/security/file-ca.yaml

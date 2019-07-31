@@ -1,0 +1,5 @@
+type: impersonation
+username: admin
+groups:
+  - group1
+  - group2
