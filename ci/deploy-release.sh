@@ -3,7 +3,7 @@ set -e
 set -uxo pipefail
 
 # Decrypt and import signing key
-openssl aes-256-cbc -K $encrypted_af78a6d0be4c_key -iv $encrypted_af78a6d0be4c_iv -in ci/dropwizard.asc.enc -out ci/dropwizard.asc -d
+openssl aes-256-cbc -K $encrypted_dd489cad062d_key -iv $encrypted_dd489cad062d_iv -in ci/dropwizard.asc.enc -out ci/dropwizard.asc -d
 gpg --armor --import ci/dropwizard.asc
 
 ./mvnw -B deploy --settings 'ci/settings.xml' -DperformRelease=true -Dmaven.test.skip=true

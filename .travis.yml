@@ -1,0 +1,32 @@
+dist: xenial
+language: java
+jdk:
+- openjdk8
+- openjdk11
+before_install:
+- rm ~/.m2/settings.xml || true
+- ulimit -c unlimited -S
+after_success:
+- bash ci/after_success.sh
+cache:
+  directories:
+  - "$HOME/.m2"
+deploy:
+- provider: script
+  script: bash ci/deploy-snapshot.sh
+  on:
+    repo: dropwizard/dropwizard-kubernetes
+    tags: false
+    branch: master
+    jdk: openjdk8
+- provider: script
+  script: bash ci/deploy-release.sh
+  on:
+    repo: dropwizard/dropwizard-kubernetes
+    tags: true
+    branch: release
+    jdk: openjdk8
+env:
+  global:
+  - secure: GLM9kIyty6wq8wr9Y2uAJPLJipmrP1FGqmOzW4/EsO9Xkj1CWIFR2iACsLfjcUTI9j90/n9NQIdCy3YjwXDOu0niA2iIyIPha9OUReT7JId7f4vuRG1gN4bxiqdevpJ142KovQ443lF1RoIOFpbYSZqpCdkf+8sG6K5gip8hg2M0r+p7sXKFxPs53j1HYWd5HtyhbFxx5xgItPG+/dLIq9UzwBzS6mn1dMraqpxmLMnoUnPns5HqwV8Kbibe6hbe7wgWGMalHAX9gBbKv20yaYw6vf+6AJdjMEd5MrJMv2qPOFNoFvLPkHTHG76tS92b0uWIUmVLkMQvBWaqPc1gV+rr+Pq0/BgEg8ZkgbTUEkLL0mB2JcRrtdDaM03XtEwFo2jr820YEVktrPPz2MCWBgIwQK1DEEdE4b6Acc6KdCUMAC11cuayReAyWJzL7cJL5T80JeQmssjI3ePXSBaWnghS4wxSLtLhh6xKvsnJhIFOLmASGcnGSn3tO5HJVgp5EpyPYXk4u9xo33FJI9sNkbLvIXrBi5j/nfUG993LzM2RaLUmQxwjDBmzLbeVWdagsbUcnBCx7NkPt7s8o5fC3R20MWmyeQlbIpKC69WVIAUAX3h1KzW6znCnbT3nw+NwkQqQCdVxsblr6AdR4ge58xRa++SwmEKmtoIgjwcXvas=
+  - secure: Dq5pCxX/0lNy13xHLBje91L8JhD5UySuJ2e8A+zITpUXQVAdT9SvkSrAiiAVEoU8jXsxuUc73SZkpzHbC7E8IWRCULmKmzMsc3mibDEJRACIMtpQMvswlLUCddGkvZSjpeEekoK6OFOY3jv7cWZW2THgaDMgo4nFD/Mzw9JFsh6Y8WJtYBToLQfNs2PZrdaGV6hWl6NI0JbeusY1XqHetuwWccoMirBNx4BHm4eCAY2cobPrMFYP4+JsuGo+1sFKej44PxMZ0JC7Oyk1fFxyAgukKObaiiOqxjM5QWuD8JPb1pf0BmkuP022+mB+1zW699p5BEa+zGccK8nefXhnC3c7UZkpN/dMZVVky3OrDPHJ/I0ESQ4GiDmz845ZSUuXizrGFDzzT2uSj7EU+nhsa3JDajshA/wPYItVxkWJMyvwJ1PA8gZOKTEHUDx07/dlj1NE55mjRUQl1STZNfyHS7w0l65I0q+5BCXJXuBK/i0uENEi830Fqy5slfXMgZ/X6KlDDEb8TkUIdzfQmFnXHUOBpKeTlrBsJ+qxQLUSviboB95z6bcNSYAohjx1VAN1MRXpPaLeAn0SoTHDc/eQ494h4ht65OOeCavH2WVcAIfPygAKlCwrcZ4zeQ7apXtGLALtIVXYiYmaWQxeq8AEZCA3ncaNrQ5ftRXRIdiHc18=
