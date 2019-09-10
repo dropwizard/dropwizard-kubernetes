@@ -138,7 +138,7 @@ public class SecurityFactory {
             }
 
             try {
-                final SSLContext sslContext = SSLUtils.sslContext(keyManagers, trustManagers, config.isTrustCerts());
+                final SSLContext sslContext = SSLUtils.sslContext(keyManagers, trustManagers);
                 builder.sslSocketFactory(sslContext.getSocketFactory(), trustManager);
             } catch (final GeneralSecurityException var7) {
                 throw new AssertionError();
