@@ -15,7 +15,7 @@ public class LoggingNetworkInterceptorFactory implements NetworkInterceptorFacto
 
     @NotNull
     @JsonProperty
-    private HttpLoggingInterceptor.Level level = HttpLoggingInterceptor.Level.BODY;
+    private HttpLoggingInterceptor.Level level = HttpLoggingInterceptor.Level.BASIC;
 
     public boolean isEnabled() {
         return enabled;
