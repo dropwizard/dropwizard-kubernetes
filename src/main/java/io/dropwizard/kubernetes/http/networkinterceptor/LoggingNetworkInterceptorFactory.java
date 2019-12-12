@@ -11,7 +11,7 @@ import javax.validation.constraints.NotNull;
 @JsonTypeName("logging")
 public class LoggingNetworkInterceptorFactory implements NetworkInterceptorFactory {
     @JsonProperty
-    private boolean enabled = true;
+    private boolean enabled = false;
 
     @NotNull
     @JsonProperty
