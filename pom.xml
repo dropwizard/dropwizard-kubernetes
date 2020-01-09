@@ -75,7 +75,7 @@
 
     <brave.version>5.9.1</brave.version>
     <dropwizard.version>2.0.0</dropwizard.version>
-    <fabric8.kubernetes-client.version>4.6.4</fabric8.kubernetes-client.version>
+    <fabric8.kubernetes-client.version>4.7.0</fabric8.kubernetes-client.version>
     <okhttp-client.version>3.14.5</okhttp-client.version>
     <okhttp-metrics.version>0.4.0</okhttp-metrics.version>
   </properties>
