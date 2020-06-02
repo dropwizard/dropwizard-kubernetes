@@ -2,6 +2,7 @@ package io.dropwizard.kubernetes.http.interceptor;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.common.io.Resources;
+import io.dropwizard.configuration.ConfigurationException;
 import io.dropwizard.configuration.YamlConfigurationFactory;
 import io.dropwizard.jackson.DiscoverableSubtypeResolver;
 import io.dropwizard.jackson.Jackson;
@@ -12,6 +13,7 @@ import okhttp3.Interceptor;
 import org.junit.Test;
 
 import java.io.File;
+import java.io.IOException;
 
 import javax.validation.Validator;
 
