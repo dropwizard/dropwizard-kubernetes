@@ -6,11 +6,9 @@ import io.dropwizard.kubernetes.http.security.OAuthTokenFactory;
 import io.fabric8.kubernetes.client.Config;
 import io.fabric8.kubernetes.client.OAuthTokenProvider;
 import okhttp3.Interceptor;
-import okhttp3.Request;
 
 import javax.validation.Valid;
 import javax.validation.constraints.NotNull;
-import javax.ws.rs.core.HttpHeaders;
 
 @JsonTypeName("oauth")
 public class OAuthAuthorizationInterceptorFactory implements InterceptorFactory {
@@ -31,12 +29,6 @@ public class OAuthAuthorizationInterceptorFactory implements InterceptorFactory 
     public Interceptor build(final Config config) {
         final OAuthTokenProvider oAuthTokenProvider = oAuthToken.buildOAuthTokenProvider();
         config.setOauthTokenProvider(oAuthTokenProvider);
-        return chain -> {
-            final Request authReq = chain.request()
-                    .newBuilder()
-                    .addHeader(HttpHeaders.AUTHORIZATION, "Bearer " + oAuthTokenProvider.getToken())
-                    .build();
-            return chain.proceed(authReq);
-        };
+        return new OAuthAuthorizationInterceptor(oAuthTokenProvider);
     }
 }
