@@ -5,7 +5,7 @@
 
   <groupId>io.dropwizard.modules</groupId>
   <artifactId>dropwizard-kubernetes</artifactId>
-  <version>1.4.1</version>
+  <version>1.4.2</version>
   <packaging>jar</packaging>
 
   <name>dropwizard-kubernetes</name>
@@ -37,7 +37,7 @@
     <developerConnection>scm:git:git@github.com:dropwizard/dropwizard-kubernetes.git</developerConnection>
     <connection>scm:git:https://github.com/dropwizard/dropwizard-kubernetes.git</connection>
     <url>https://github.com/dropwizard/dropwizard-kubernetes</url>
-    <tag>dropwizard-kubernetes-1.4.1</tag>
+    <tag>dropwizard-kubernetes-1.4.2</tag>
   </scm>
 
   <issueManagement>
