@@ -73,6 +73,10 @@
     <maven.compiler.showWarnings>true</maven.compiler.showWarnings>
     <maven.compiler.showDeprecation>true</maven.compiler.showDeprecation>
 
+    <sonar.projectKey>dropwizard_dropwizard-kubernetes</sonar.projectKey>
+    <sonar.organization>dropwizard</sonar.organization>
+    <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+
     <brave.version>5.13.2</brave.version>
     <dropwizard.version>2.0.17</dropwizard.version>
     <fabric8.kubernetes-client.version>4.12.0</fabric8.kubernetes-client.version>
@@ -249,6 +253,11 @@
           <groupId>org.sonatype.plugins</groupId>
           <artifactId>nexus-staging-maven-plugin</artifactId>
           <version>1.6.8</version>
+        </plugin>
+        <plugin>
+          <groupId>org.sonarsource.scanner.maven</groupId>
+          <artifactId>sonar-maven-plugin</artifactId>
+          <version>3.7.0.1746</version>
         </plugin>
       </plugins>
     </pluginManagement>
