@@ -77,7 +77,7 @@
     <sonar.organization>dropwizard</sonar.organization>
     <sonar.host.url>https://sonarcloud.io</sonar.host.url>
 
-    <brave.version>5.13.8</brave.version>
+    <brave.version>5.13.9</brave.version>
     <dropwizard.version>2.0.29</dropwizard.version>
     <fabric8.kubernetes-client.version>5.10.1</fabric8.kubernetes-client.version>
     <okhttp-client.version>3.14.9</okhttp-client.version>
