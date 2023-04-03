@@ -6,7 +6,7 @@ import io.fabric8.kubernetes.client.Config;
 import okhttp3.Interceptor;
 import okhttp3.logging.HttpLoggingInterceptor;
 
-import javax.validation.constraints.NotNull;
+import jakarta.validation.constraints.NotNull;
 
 @JsonTypeName("logging")
 public class LoggingNetworkInterceptorFactory implements NetworkInterceptorFactory {

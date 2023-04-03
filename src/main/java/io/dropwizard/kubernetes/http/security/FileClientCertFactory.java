@@ -6,7 +6,7 @@ import io.fabric8.kubernetes.client.Config;
 
 import java.io.File;
 
-import javax.validation.constraints.NotNull;
+import jakarta.validation.constraints.NotNull;
 
 @JsonTypeName("file")
 public class FileClientCertFactory implements ClientCertFactory {

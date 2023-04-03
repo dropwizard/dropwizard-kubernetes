@@ -7,8 +7,8 @@ import io.fabric8.kubernetes.client.Config;
 import io.fabric8.kubernetes.client.OAuthTokenProvider;
 import okhttp3.Interceptor;
 
-import javax.validation.Valid;
-import javax.validation.constraints.NotNull;
+import jakarta.validation.Valid;
+import jakarta.validation.constraints.NotNull;
 
 @JsonTypeName("oauth")
 public class OAuthAuthorizationInterceptorFactory implements InterceptorFactory {

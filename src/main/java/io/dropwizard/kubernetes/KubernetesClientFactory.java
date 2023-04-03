@@ -17,8 +17,8 @@ import io.fabric8.kubernetes.client.RequestConfig;
 import okhttp3.OkHttpClient;
 import org.checkerframework.checker.nullness.qual.Nullable;
 
-import javax.validation.Valid;
-import javax.validation.constraints.NotNull;
+import jakarta.validation.Valid;
+import jakarta.validation.constraints.NotNull;
 
 public class KubernetesClientFactory {
     public static final String DEFAULT_K8S_HEALTH_CHECK_URL = "/healthz";

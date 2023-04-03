@@ -5,7 +5,7 @@ import io.fabric8.kubernetes.client.Config;
 import okhttp3.Interceptor;
 import okhttp3.Request;
 
-import javax.ws.rs.core.HttpHeaders;
+import jakarta.ws.rs.core.HttpHeaders;
 
 @JsonTypeName("user-agent")
 public class UserAgentNetworkInterceptorFactory implements NetworkInterceptorFactory {

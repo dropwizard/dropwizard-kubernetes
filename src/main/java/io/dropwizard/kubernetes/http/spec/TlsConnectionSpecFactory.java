@@ -6,8 +6,8 @@ import io.fabric8.kubernetes.client.Config;
 import okhttp3.ConnectionSpec;
 import okhttp3.TlsVersion;
 
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Size;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Size;
 
 @JsonTypeName("tls")
 public class TlsConnectionSpecFactory implements ConnectionSpecFactory {
