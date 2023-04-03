@@ -4,12 +4,13 @@ import io.dropwizard.configuration.ConfigurationException;
 import io.dropwizard.kubernetes.http.security.StringOAuthTokenFactory;
 import io.fabric8.kubernetes.client.OAuthTokenProvider;
 import okhttp3.Interceptor;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import java.io.IOException;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.Assert.fail;
+import static org.assertj.core.api.Assertions.assertThatException;
+import static org.junit.jupiter.api.Assertions.fail;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
@@ -28,15 +29,8 @@ public class OAuthAuthorizationInterceptorTest {
         when(chain.request()).thenThrow(exception);
 
         // when
-        IllegalArgumentException caughtException = null;
-        try {
-            interceptor.intercept(chain);
-            fail();
-        } catch (final IllegalArgumentException e) {
-            caughtException = e;
-        }
-
-        // then
-        assertThat(caughtException).isNotEqualTo(exception);
+        assertThatException()
+                .isThrownBy(() -> interceptor.intercept(chain))
+                .isNotEqualTo(exception);
     }
 }

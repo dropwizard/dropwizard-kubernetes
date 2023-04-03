@@ -15,11 +15,13 @@ This bundle comes with out-of-the-box support for:
 For more information on the Kubernetes API, take a look at the official documentation here: https://kubernetes.io/docs/reference/#api-reference
 
 ## Dropwizard Version Support Matrix
-dropwizard-kubernetes   | Dropwizard v1.3.x  | Dropwizard v2.0.x
------------------------ | ------------------ | ------------------
-v1.3.x                  | :white_check_mark: | :white_check_mark:
-v1.4.x                  | :white_check_mark: | :white_check_mark:
-
+| dropwizard-kubernetes | Dropwizard v1.3.x  | Dropwizard v2.0.x  | Dropwizard v2.1.x  | Dropwizard v3.0.x  | Dropwizard v4.0.x  |
+|-----------------------|--------------------|--------------------|--------------------|--------------------|--------------------|
+| v1.3.x                | :white_check_mark: | :white_check_mark: | :x:                | :x:                | :x:                |
+| v1.4.x                | :white_check_mark: | :white_check_mark: | :x:                | :x:                | :x:                |
+| v1.5.x                | :white_check_mark: | :white_check_mark: | :white_check_mark: | :x:                | :x:                |
+| v3.0.x                | :x:                | :x:                | :x:                | :white_check_mark: | :x:                |
+| v4.0.x                | :x:                | :x:                | :x:                | :x:                | :white_check_mark: |
 
 ## Usage
 Add dependency on library.

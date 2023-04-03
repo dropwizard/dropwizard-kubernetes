@@ -7,8 +7,8 @@ import okhttp3.OkHttpClient;
 import okhttp3.Protocol;
 import okhttp3.Request;
 import okhttp3.Response;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.ArgumentMatchers.any;
@@ -24,7 +24,7 @@ public class KubernetesClientHealthCheckTest {
 
     private final KubernetesClientHealthCheck healthCheck = new KubernetesClientHealthCheck(httpClient, NAME, HEALTH_URL);
 
-    @Before
+    @BeforeEach
     public void setUp() throws Exception {
         reset(httpClient);
     }

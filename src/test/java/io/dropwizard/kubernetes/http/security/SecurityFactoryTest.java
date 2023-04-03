@@ -9,7 +9,7 @@ import io.fabric8.kubernetes.client.Config;
 import io.fabric8.kubernetes.client.ConfigBuilder;
 import okhttp3.OkHttpClient;
 import okhttp3.TlsVersion;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import java.io.File;
 

@@ -10,7 +10,7 @@ import io.fabric8.kubernetes.client.Config;
 import io.fabric8.kubernetes.client.ConfigBuilder;
 import io.fabric8.kubernetes.client.utils.ImpersonatorInterceptor;
 import okhttp3.Interceptor;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import java.io.File;
 

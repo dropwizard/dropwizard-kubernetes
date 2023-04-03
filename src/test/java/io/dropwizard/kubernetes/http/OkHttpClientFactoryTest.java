@@ -15,8 +15,8 @@ import io.fabric8.kubernetes.client.ConfigBuilder;
 import io.fabric8.kubernetes.client.RequestConfig;
 import io.fabric8.kubernetes.client.RequestConfigBuilder;
 import okhttp3.OkHttpClient;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 import java.io.File;
 
@@ -33,7 +33,7 @@ public class OkHttpClientFactoryTest {
 
     private Tracing tracing;
 
-    @Before
+    @BeforeEach
     public void setUp() {
         this.metrics.removeMatching(MetricFilter.ALL);
         this.tracing = Tracing.newBuilder()
