@@ -6,7 +6,7 @@ import io.dropwizard.configuration.YamlConfigurationFactory;
 import io.dropwizard.jackson.Jackson;
 import io.dropwizard.jersey.validation.Validators;
 import io.fabric8.kubernetes.client.RequestConfig;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import java.io.File;
 

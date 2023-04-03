@@ -3,9 +3,8 @@ package io.dropwizard.kubernetes.config;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import io.fabric8.kubernetes.client.Config;
 import io.fabric8.kubernetes.client.RequestConfig;
+import org.checkerframework.checker.nullness.qual.Nullable;
 import org.hibernate.validator.constraints.URL;
-
-import javax.annotation.Nullable;
 
 public class ConfigFactory {
     @URL
