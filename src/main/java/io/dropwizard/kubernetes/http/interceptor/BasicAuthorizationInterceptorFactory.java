@@ -7,8 +7,8 @@ import okhttp3.Credentials;
 import okhttp3.Interceptor;
 import okhttp3.Request;
 
-import javax.validation.constraints.NotNull;
-import javax.ws.rs.core.HttpHeaders;
+import jakarta.validation.constraints.NotNull;
+import jakarta.ws.rs.core.HttpHeaders;
 
 @JsonTypeName("basic-auth")
 public class BasicAuthorizationInterceptorFactory implements InterceptorFactory {

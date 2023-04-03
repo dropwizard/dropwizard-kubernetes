@@ -21,7 +21,7 @@ import org.junit.jupiter.api.Test;
 import java.io.File;
 import java.net.URL;
 
-import javax.validation.Validator;
+import jakarta.validation.Validator;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.ArgumentMatchers.any;

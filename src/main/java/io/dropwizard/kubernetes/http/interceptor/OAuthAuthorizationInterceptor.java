@@ -7,7 +7,7 @@ import okhttp3.Response;
 
 import java.io.IOException;
 
-import javax.ws.rs.core.HttpHeaders;
+import jakarta.ws.rs.core.HttpHeaders;
 
 public class OAuthAuthorizationInterceptor implements Interceptor {
 

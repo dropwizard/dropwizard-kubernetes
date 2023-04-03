@@ -4,7 +4,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import io.fabric8.kubernetes.client.Config;
 import okhttp3.Dispatcher;
 
-import javax.validation.constraints.Min;
+import jakarta.validation.constraints.Min;
 
 public class DispatcherFactory {
     @Min(1)
