@@ -1,2 +1,3 @@
+---
 type: file
 clientCertFile: src/test/resources/yaml/http/security/file-client-cert.yaml

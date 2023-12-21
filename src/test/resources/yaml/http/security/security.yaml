@@ -1,3 +1,4 @@
+---
 trustCerts: true
 caCert:
   type: string

@@ -1,3 +1,4 @@
+---
 watchReconnectInterval: 3s
 watchReconnectLimit: 25
 connectionTimeout: 10s
