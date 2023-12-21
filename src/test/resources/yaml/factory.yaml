@@ -1,3 +1,4 @@
+---
 name: my-k8s-usecase
 config:
   masterUrl: https://localhost:443
