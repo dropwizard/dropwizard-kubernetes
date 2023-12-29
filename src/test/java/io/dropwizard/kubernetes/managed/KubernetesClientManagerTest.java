@@ -1,8 +1,8 @@
 package io.dropwizard.kubernetes.managed;
 
 import io.fabric8.kubernetes.client.KubernetesClient;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.reset;
@@ -14,7 +14,7 @@ public class KubernetesClientManagerTest {
     private final KubernetesClient k8sClient = mock(KubernetesClient.class);
     private final KubernetesClientManager k8sClientManager = new KubernetesClientManager(k8sClient, NAME);
 
-    @Before
+    @BeforeEach
     public void setUp() throws Exception {
         reset(k8sClient);
     }

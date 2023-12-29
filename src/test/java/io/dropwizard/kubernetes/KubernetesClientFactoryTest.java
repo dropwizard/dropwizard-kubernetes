@@ -15,8 +15,8 @@ import io.dropwizard.kubernetes.health.KubernetesClientHealthCheck;
 import io.dropwizard.kubernetes.managed.KubernetesClientManager;
 import io.dropwizard.lifecycle.setup.LifecycleEnvironment;
 import io.fabric8.kubernetes.client.KubernetesClient;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 import java.io.File;
 import java.net.URL;
@@ -40,7 +40,7 @@ public class KubernetesClientFactoryTest {
 
     private Tracing tracing;
 
-    @Before
+    @BeforeEach
     public void setUp() {
         this.metrics.removeMatching(MetricFilter.ALL);
         this.tracing = Tracing.newBuilder()

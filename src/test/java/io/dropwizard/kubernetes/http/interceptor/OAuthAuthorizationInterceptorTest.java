@@ -4,12 +4,12 @@ import io.dropwizard.configuration.ConfigurationException;
 import io.dropwizard.kubernetes.http.security.StringOAuthTokenFactory;
 import io.fabric8.kubernetes.client.OAuthTokenProvider;
 import okhttp3.Interceptor;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import java.io.IOException;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.Assert.fail;
+import static org.junit.jupiter.api.Assertions.fail;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
