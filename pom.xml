@@ -40,8 +40,8 @@
 
     <brave.version>5.17.0</brave.version>
     <fabric8.kubernetes-client.version>5.10.2</fabric8.kubernetes-client.version>
-    <okhttp-client.version>3.14.9</okhttp-client.version>
-    <okhttp-metrics.version>0.4.0</okhttp-metrics.version>
+    <okhttp-client.version>4.12.0</okhttp-client.version>
+    <okhttp-metrics.version>0.5.0-rc.1</okhttp-metrics.version>
   </properties>
 
   <dependencyManagement>
@@ -76,7 +76,7 @@
       <version>${okhttp-client.version}</version>
     </dependency>
     <dependency>
-      <groupId>com.raskasa.metrics</groupId>
+      <groupId>io.dropwizard.metrics.okhttp</groupId>
       <artifactId>metrics-okhttp</artifactId>
       <version>${okhttp-metrics.version}</version>
     </dependency>
