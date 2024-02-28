@@ -38,7 +38,7 @@
   <properties>
     <sonar.projectKey>dropwizard_dropwizard-kubernetes</sonar.projectKey>
 
-    <brave.version>6.0.1</brave.version>
+    <brave.version>6.0.2</brave.version>
     <fabric8.kubernetes-client.version>5.10.2</fabric8.kubernetes-client.version>
     <okhttp-client.version>4.12.0</okhttp-client.version>
     <okhttp-metrics.version>0.5.0-rc.1</okhttp-metrics.version>
